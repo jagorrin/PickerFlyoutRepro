@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Picker,
 } from 'react-native';
 
 import {
@@ -34,6 +35,22 @@ const App = () => {
           style={styles.scrollView}>
           <Header />
           <View style={styles.body}>
+          <View style={{flex: 1, flexDirection: "row"}}>
+            <View style={{flex: 0.5}}>
+            <Picker style={{height: 50, width: 100, margin: 100, alignSelf: "flex-start"}}>
+                <Picker.Item label="Item one" value="item one" />
+                <Picker.Item label="Item two" value="item two" />
+                <Picker.Item label="Item three" value="item three" />
+              </Picker>
+              </View>
+              <View style={{flex: 0.5}}>
+              <Picker style={{height: 50, width: 100, margin: 100, alignSelf: "flex-end"}}>
+                <Picker.Item label="Item one" value="item one" />
+                <Picker.Item label="Item two" value="item two" />
+                <Picker.Item label="Item three" value="item three" />
+              </Picker>
+              </View>
+          </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
@@ -60,6 +77,22 @@ const App = () => {
               </Text>
             </View>
             <LearnMoreLinks />
+            <View style={{flex: 1, flexDirection: "row"}}>
+            <View style={{flex: 0.5}}>
+              <Picker style={{height: 50, width: 100, margin: 100, alignSelf: "flex-start"}}>
+                <Picker.Item label="Item one" value="item one" />
+                <Picker.Item label="Item two" value="item two" />
+                <Picker.Item label="Item three" value="item three" />
+              </Picker>
+              </View>
+              <View style={{flex: 0.5}}>
+              <Picker style={{height: 50, width: 100, margin: 100, alignSelf: "flex-end"}}>
+                <Picker.Item label="Item one" value="item one" />
+                <Picker.Item label="Item two" value="item two" />
+                <Picker.Item label="Item three" value="item three" />
+              </Picker>
+              </View>
+          </View>
           </View>
         </ScrollView>
       </SafeAreaView>
